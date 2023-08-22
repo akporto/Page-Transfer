@@ -1,0 +1,360 @@
+/* Estilos para o botão flutuante */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .whatsapp-icon:hover {
+    background-color: #128C7E;
+  }
+
+  .logo-icon {
+    width: 30px; 
+    height: 30px;
+    margin-right: 5px; 
+
+  }
+  
+  .logo-text{
+    color: #fff;
+  }
+
+  .logo-icon{
+    filter: invert(1);
+  }
+
+  #home {
+    background-image: url("./imagens/navegador-no-carro-na-estrada-em-uma-area-florestal-fechada.jpg"); /* Defina o caminho da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    overflow: hidden;
+    
+    
+  }
+  
+
+  #home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(214, 212, 212, 0.6) 100%);
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  
+  #home .container {
+    position: relative;
+    z-index: 10000;
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  #home h2 {
+    margin: 0;
+    padding: 30px;
+    
+  }
+  
+  
+  .navbar-brand {
+    position: relative;
+    z-index: 10000;
+  }
+  
+  
+  .navbar-brand .logo-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .navbar-nav{
+    margin-left: auto;
+  }
+
+
+#servicos{
+  margin-top: 50px;
+}
+  
+.card.card-custom {
+  border: none;
+  box-shadow: none; 
+}
+
+.card-img-small { /* Estilos personalizados para a imagem do card 4 */
+  height: 100px; /* Reduz a altura da imagem para 150px */
+width: 160px;
+}
+
+.city-name{
+  color: #fff;
+}
+
+/* Estilo dos botões do carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0); /* Fundo totalmente transparente */
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo do ícone dos botões */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: url("/icones/de-volta.png"); /* Ícone da seta esquerda */
+  background-size: 100% 100%;
+}
+
+.carousel-control-next-icon {
+  background-image: url("/icones/proximo\ \(1\).png"); /* Ícone da seta direita */
+}
+
+/* Ajuste a posição dos controles do carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+}
+
+.carousel-control-prev {
+  left: -30px;
+}
+
+.carousel-control-next {
+  right: -30px;
+}
+
+/* Transição para o tamanho da imagem */
+.img-grow {
+  transition: width 6s ease;
+}
+
+.carousel-inner .carousel-item.active .img-grow {
+  width: 100%; /* Tamanho máximo da imagem */
+}
+
+/* Estilo dos cards da seção Destino */
+#destino .card {
+  height: 350px; /* Defina a altura desejada para os cards */
+}
+
+#destino .card-img-top {
+  max-height: 200px; /* Defina a altura máxima para as imagens */
+  object-fit: cover;
+}
+
+#destino .card-body {
+  height: 150px; /* Defina a altura desejada para o corpo dos cards */
+}
+
+#destino .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#destino .card-text {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Estilo para o botão Ver região litorânea no Google Maps */
+.btn-primary {
+  background-color: #696569;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #302f2f;
+  color: #ffffff;
+}
+
+
+/* Estilo para a animação do card na seção Destino */
+#destino .card {
+  transition: transform 0.3s ease;
+}
+
+#destino .card:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do card em 10% */
+}
+
+/* Estilo para a animação de mostrar a descrição dos cards */
+#destino .hidden-text {
+  display: none;
+}
+
+#destino .card-effect:hover .hidden-text {
+  display: block;
+}
+
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991.98px) {
+  #navbarToggleBtn{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+  }
+}
+
+@media (max-width: 991.98px) {
+  #navbarNav.navbar-collapse {
+    text-align: center;
+  }
+}
+
+/* Estilo para a descrição completa nos cards da seção Destino */
+.card-description {
+  display: none; /* Inicia oculto */
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%; /* Ajuste a largura conforme necessário */
+  z-index: 1;
+}
+
+/* Mostra a descrição completa em dispositivos maiores */
+.card:hover .card-description {
+  display: block;
+}
+
+/* Mostra a descrição completa em dispositivos menores */
+@media (max-width: 767px) {
+  .card-description {
+    display: block;
+  }
+}
+
+/* Ocultar links da barra de navegação por padrão */
+#navbarNav {
+  display: none;
+}
+
+/* Mostrar links da barra de navegação quando a classe "show" é aplicada */
+#navbarNav.show {
+  display: block;
+}
+
+/* Alinhar o ícone do menu ao centro em dispositivos móveis */
+@media (max-width: 991.98px) {
+  #navbarToggleBtn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #navbarNav.navbar-collapse {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-indicators {
+    bottom: 10px;
+  }
+
+  .carousel-indicators li {
+    background-color: #bbb;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+  }
+
+  .carousel-indicators .active {
+    background-color: #333;
+  }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+  .mobile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Ajuste a altura conforme necessário */
+  }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item {
+    width: 100%;
+    max-height: 300px; /* Ajuste a altura conforme necessário */
+  }
+  
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: block;
+  }
+  
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left {
+    transform: translateX(0);
+  }
+  
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-left.active {
+    transform: translateX(0);
+  }
+}
+
