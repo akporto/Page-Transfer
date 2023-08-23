@@ -1,7 +1,7 @@
 
   <h1>Translado Porto Seguro - README</h1>
 
-  <p>Este é o README para o projeto "Translado Porto Seguro", um site que oferece informações e serviços de transfer e turismo na cidade de Porto Seguro, Bahia. O site foi desenvolvido utilizando HTML, CSS e JavaScript, e tem como objetivo fornecer aos usuários informações sobre os serviços oferecidos, destinos populares, opções de contato e muito mais.</p>
+  <p>Uma Página web que oferece informações e serviços de transfer e turismo na cidade de Porto Seguro, Bahia. O site foi desenvolvido utilizando HTML, CSS e JavaScript, e tem como objetivo fornecer aos usuários informações sobre os serviços oferecidos, destinos populares, opções de contato e muito mais.</p>
 
   <h2>Conteúdo</h2>
 
