@@ -41,6 +41,7 @@
     background-position: center;
     padding: 50px 0;
     overflow: hidden;
+    position: relative; 
     
     
   }
@@ -110,51 +111,7 @@ width: 160px;
   color: #fff;
 }
 
-/* Estilo dos botões do carousel */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0); /* Fundo totalmente transparente */
-  border-radius: 50%;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  transition: background-color 0.3s ease;
-}
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Estilo do ícone dos botões */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: url("/icones/de-volta.png"); /* Ícone da seta esquerda */
-  background-size: 100% 100%;
-}
-
-.carousel-control-next-icon {
-  background-image: url("/icones/proximo\ \(1\).png"); /* Ícone da seta direita */
-}
-
-/* Ajuste a posição dos controles do carousel */
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10000;
-}
-
-.carousel-control-prev {
-  left: -30px;
-}
-
-.carousel-control-next {
-  right: -30px;
-}
 
 /* Transição para o tamanho da imagem */
 .img-grow {
@@ -300,61 +257,14 @@ width: 160px;
   }
 }
 
-@media (max-width: 767px) {
-  .carousel-indicators {
-    bottom: 10px;
-  }
 
-  .carousel-indicators li {
-    background-color: #bbb;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 0 4px;
-  }
-
-  .carousel-indicators .active {
-    background-color: #333;
-  }
+.splide__slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Estilos para dispositivos móveis */
-@media (max-width: 767px) {
-  .mobile-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px; /* Ajuste a altura conforme necessário */
-  }
+.splide__arrow img {
+  width: 30px; /* Defina o tamanho da imagem de acordo com sua preferência */
+  height: auto;
 }
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 767px) {
-  .carousel-inner .carousel-item {
-    width: 100%;
-    max-height: 300px; /* Ajuste a altura conforme necessário */
-  }
-  
-  .carousel-inner .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .carousel-inner .carousel-item.active,
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev {
-    display: block;
-  }
-  
-  .carousel-inner .carousel-item-right,
-  .carousel-inner .carousel-item-left {
-    transform: translateX(0);
-  }
-  
-  .carousel-inner .carousel-item-right.active,
-  .carousel-inner .carousel-item-left.active {
-    transform: translateX(0);
-  }
-}
-
